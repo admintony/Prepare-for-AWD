@@ -11,3 +11,16 @@
 |   |—— 克制不死马.txt       //克制不死马的方法
 </code>
 
+<code>
+###########
+├── Readme.md               //帮助文档 
+├── console.py              //启动
+├── core                    // 核心模块
+│   ├── shells.py           //写入，读取，保存webshell
+│   ├── flag.py             // 获取，提交flag
+│   ├── iplist.py           // 生成ip列表   
+│—— auxi                    //辅助模块
+|   |—— upload.py           //webshell上传功能
+|   |—— shell.php           //默认上传文件
+|   |—— webshell.txt        //一句话储存路径  
+</code>
