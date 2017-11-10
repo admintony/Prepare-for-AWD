@@ -1,6 +1,10 @@
 #!/usr/bin/python
 #coding=utf-8
+#Code by ：AdminTony
+#QQ ：78941695
 #作用：读取被修改过的文件，然后将文件的地址加上内容全部存放在txt
+#Usage ：python demo.py
+#注意：请把脚本放在有读写权限，并且所有修改文件均在该目录的子目录中或该目录中的地方执行。
 
 import sys,subprocess
 #查找最近10分钟被修改的文件
@@ -32,7 +36,7 @@ def loadfile(addr):
 	rm_cmd = "rm -rf "+addr
 	su = subprocess.Popen(rm_cmd,shell=True,stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
 	su.communicate()
-	print "loadfile over : "+addr
+	print "Delete file over : "+addr
 
 if __name__ == '__main__':
 	while True:
