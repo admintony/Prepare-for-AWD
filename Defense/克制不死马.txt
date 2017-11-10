@@ -1,0 +1,7 @@
+1.ps auxww|grep shell.php 找到pid后杀掉进程就可以，你删掉脚本是起不了作用的，因为php执行的时候已经把脚本读进去解释成opcode运行了
+
+2.重启php等web服务
+
+3.用一个ignore_user_abort(true)脚本，一直竞争写入（断断续续）。usleep要低于对方不死马设置的值。
+
+4.创建一个和不死马生成的马一样名字的文件夹。
