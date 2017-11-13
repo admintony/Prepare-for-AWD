@@ -4,6 +4,7 @@
 ###########
 ├── Readme.md               // 帮助文档 
 ├── Attack                  // 批量&攻击型脚本
+│   ├── GetFlag.py          //用shell来批量getflag
 │   ├── upload_shell.py     //批量上传不死马并激活
 │   ├── 命令生成不死马_批量版.py  //调用system函数来执行shell命令生成不死马
 │   ├── 隐藏不死马测试版.php     //生成并隐藏文件
