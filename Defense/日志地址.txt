@@ -1,0 +1,2 @@
+/var/log/apache2/
+/usr/local/apache2/logs

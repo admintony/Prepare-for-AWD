@@ -1,0 +1,4 @@
+alias curl='echo fuckoff'  权限要求较低
+chmod -x curl  权限要求较高
+
+/usr/bin  curl路径
