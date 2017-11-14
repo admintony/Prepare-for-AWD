@@ -16,7 +16,7 @@
 |   |—— Web日志安全分析工具+v2.0.rar  //可以直接导入apache等日志进行分析
 |   |—— waf.php             //记录所有的敏感请求-别人的
 </code></pre>
-<code><pre>
+<pre><code>
 ListCreate:
 <?php
 	$file_str="/1111/.index.php";
