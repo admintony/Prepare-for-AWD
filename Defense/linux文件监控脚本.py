@@ -37,9 +37,9 @@ def loadfile(addr):
 	except:
 		shell_content = "null"
 	#如果文件内容不为空再写入，避免写入空的。
-	print shell_content
+	#print shell_content
 	if data :
-		if data not in shell_content:
+		if all_data not in shell_content:
 			file1.write(all_data)
 	file.close()
 	file1.close()
