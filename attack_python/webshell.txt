@@ -1,2 +1,2 @@
 http://192.168.45.156/s.php,post,x
-http://127.0.0.1/1111/.fuckyou.php?pass=Sn3rtf4ck,get,a
+http://127.0.0.1/1111/.fuckyou.php,get,a
