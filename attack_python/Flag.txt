@@ -1,0 +1,31 @@
+[-] http://192.168.45.153/shell.php?pass=Sn3rtf4ck ERR_CONNECTION_TIMED_OUT
+
+http://127.0.0.1/1111/.fuckyou.php?pass=Sn3rtf4ck
+cmd exec response is null!
+
+http://192.168.45.156/s.php
+cmd exec response is null!
+
+[-] http://192.168.45.153/shell.php?pass=Sn3rtf4ck ERR_CONNECTION_TIMED_OUT
+
+http://127.0.0.1/1111/.fuckyou.php?pass=Sn3rtf4ck
+cmd exec response is null!
+
+http://192.168.45.156/s.php
+cmd exec response is null!
+
+http://192.168.45.156/s.php
+2017-11-17 04:06:50flag : 
+NO GET prams
+NO POST prams
+NO POST prams
+
+http://192.168.45.156/s.php
+2017-11-17 05:29:11flag : 
+NO GET prams
+NO POST prams
+NO POST prams
+
+http://127.0.0.1/1111/.fuckyou.php?pass=Sn3rtf4ck
+cmd exec response is null!
+
