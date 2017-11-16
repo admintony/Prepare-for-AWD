@@ -8,7 +8,7 @@
 
 
 
-import sys,subprocess
+import sys,subprocess,os
 #查找最近10分钟被修改的文件
 def scanfile():
 	#command: find -name '*.php' -mmin -10
@@ -23,16 +23,24 @@ def scanfile():
 #读取文件：
 def loadfile(addr):
 	data = ""
-	#如果文件不存在就pass
+	#如果文件不存在就跳出函数
 	try :
 		file = open(addr,'r')
 		data = file.read()
-	except : pass
+	except : 
+		return 0
 	all_data = addr+"\n"+data+"\n\n"
-	file1 = open("shell.txt",'a')
+	file1 = open("shell.txt",'a+')
+	#避免重复写入
+	try:
+		shell_content = file1.read()
+	except:
+		shell_content = "null"
 	#如果文件内容不为空再写入，避免写入空的。
+	print shell_content
 	if data :
-		file1.write(all_data)
+		if data not in shell_content:
+			file1.write(all_data)
 	file.close()
 	file1.close()
 	rm_cmd = "rm -rf "+addr
