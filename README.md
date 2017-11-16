@@ -16,5 +16,12 @@
 |   |—— 克制不死马.txt       //克制不死马的方法
 |   |—— Web日志安全分析工具+v2.0.rar  //可以直接导入apache等日志进行分析
 |   |—— waf.php             //记录所有的敏感请求-别人的
+├── attack_python           //攻击模块集合
+|—————— plugin	            //攻击插件目录
+|   |—— awd_attack.py	      //主程序
+|   |—— shell.php	          //upload上传的马，只支持普通马
+|   |—— shell1.php	        //upload1上传的马，只支持不是马
+|   |—— tips.txt	          //比赛中要修改的点
+|   |—— webshell.txt        //shell_list的样本
 </code></pre>
 
