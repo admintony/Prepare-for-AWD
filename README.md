@@ -24,7 +24,7 @@ http://www.admintony.com
 |—————— plugin	            //攻击插件目录
 |   |—— awd_attack.py	      //主程序
 |   |—— shell.php	          //upload上传的马，只支持普通马
-|   |—— shell1.php	        //upload1上传的马，只支持不是马
+|   |—— shell1.php	        //upload1上传的马，只支持不死马
 |   |—— tips.txt	          //比赛中要修改的点
 |   |—— webshell.txt        //shell_list的样本
 </code></pre>
